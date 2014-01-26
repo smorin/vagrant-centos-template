@@ -12,7 +12,7 @@ Step 1) Setup
 - [DemandCube Developer Setup](https://github.com/DemandCube/developer-setup)
 
 ```
-git clone git@github.com:DemandCube/developer-setup.git
+git clone https://github.com/DemandCube/developer-setup.git
 cd developer-setup
 ./setup.sh
 ```
@@ -20,7 +20,7 @@ Step 2) Run
 ----
 
 ```
-git clone git@github.com:DemandCube/vagrant-centos-template.git
+git clone https://github.com/DemandCube/vagrant-centos-template.git
 cd vagrant-centos-template
 vagrant up
 vagrant ssh
