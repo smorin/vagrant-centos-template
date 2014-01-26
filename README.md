@@ -6,15 +6,19 @@ Vagrant Ansible CentOS 6.5 Template
 
 Install
 ====
-Setup
+Step 1) Setup
 ----
+
+- [DemandCube Developer Setup](https://github.com/DemandCube/developer-setup)
+
 ```
 git clone git@github.com:DemandCube/developer-setup.git
 cd developer-setup
 ./setup.sh
 ```
-Run
+Step 2) Run
 ----
+
 ```
 git clone git@github.com:DemandCube/vagrant-centos-template.git
 cd vagrant-centos-template
