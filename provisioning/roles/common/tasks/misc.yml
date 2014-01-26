@@ -1,3 +1,7 @@
+- name: install wget
+  yum: name='wget' state=installed
+  sudo: yes
+
 - name: download epel rpm
   shell: "wget --no-check-certificate http://download.fedoraproject.org/pub/epel/6/x86_64/{{ epel_filename }} -O {{ epel_rpm }} creates={{ epel_rpm }}"
 
@@ -34,7 +38,7 @@
   sudo: yes
 
 - name: download maven repo
-  shell: "wget http://repos.fedorapeople.org/repos/dchen/apache-maven/epel-apache-maven.repo -O /etc/yum.repos.d/epel-apache-maven.repo"
+  shell: "wget http://repos.fedorapeople.org/repos/dchen/apache-maven/epel-apache-maven.repo -O {{ maven_repo_location }} creates={{ maven_repo_location }}"
   sudo: yes
 
 - name: install maven
