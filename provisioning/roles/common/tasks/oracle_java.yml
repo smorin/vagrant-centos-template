@@ -8,3 +8,10 @@
   shell: "yum -y --nogpgcheck localinstall {{ jdk_rpm }} creates=/usr/java"
   sudo: yes
 
+- name: symlink javac
+  file: src=/usr/java/default/bin/java dest=/usr/bin/java state=link
+  sudo: yes
+
+- name: symlink java
+  file: src=/usr/java/default/bin/javac dest=/usr/bin/javac state=link
+  sudo: yes
