@@ -4,6 +4,24 @@ vagrant-centos-template
 
 Vagrant Ansible CentOS 6.5 Template
 
+Install
+====
+Setup
+----
+```
+git clone git@github.com:DemandCube/developer-setup.git
+cd developer-setup
+./setup.sh
+```
+Run
+----
+```
+git clone git@github.com:DemandCube/vagrant-centos-template.git
+cd vagrant-centos-template
+vagrant up
+vagrant ssh
+```
+
 Keep your fork updated
 ====
 [Github Fork a Repo Help](https://help.github.com/articles/fork-a-repo)
