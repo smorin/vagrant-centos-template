@@ -2,4 +2,5 @@
   roles:
     - common
     - nginx
+    - samplegit
 
